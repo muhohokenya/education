@@ -47,6 +47,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('students.register') }}">{{ __('Register Student') }}</a>
+                                </li>
                             @endif
                         @else
                             <li class="nav-item">

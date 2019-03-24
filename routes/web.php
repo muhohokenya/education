@@ -21,3 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/subjects', 'SubjectsController');
 Route::post('/subjects/store', 'SubjectsController@store')->name('subjects.store');
 Route::resource('/lessons', 'LessonsController');
+
+
+/*LOGIN ROUTES*/
+Route::get('register/students','AuthStudent\RegisterController@showRegistrationForm')->name('students.register');
+Route::post('register/students','AuthStudent\RegisterController@register')->name('student.register');
+/*LOGIN ROUTES*/
